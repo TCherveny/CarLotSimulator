@@ -17,11 +17,11 @@ namespace CarLotSimulator
         public string Model { get; set; }
         public string EngineNoise { get; set; }
         public string HonkNoise { get; set; }
-        public string IsDrivable { get; set; }
+        public bool IsDrivable { get; set; }
 
 
 
-        public Car(int year, string make, string model, string enginenoise, string honknoise, string isdrivable )
+        public Car(int year, string make, string model, string enginenoise, string honknoise, bool isdrivable )
         {
             Year = year;
             Make = make;

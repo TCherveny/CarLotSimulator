@@ -17,6 +17,30 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+          
+            //Standard Member Initialization
+            Car montana = new Car();
+            montana.Year = 2006;
+            montana.Make = "Pontiac AKA GMC";
+            montana.Model = "Montana SV6";
+            montana.EngineNoise = "HAHAHAHAHAHA";
+            montana.HonkNoise = "WAWAWAAAAAAAA";
+            montana.IsDrivable = false;
+
+            montana.MakeEngineNoise(montana.EngineNoise);
+            montana.MakeHonkNoise(montana.HonkNoise);
+
+           
+           //Object Initializer Syntax
+            Car ford = new Car() { Year = 1986, Make = "Ford", Model = "F-250", EngineNoise = "VROOM VROOM", HonkNoise = "Honk Honk", IsDrivable = true };
+            ford.MakeEngineNoise();
+            ford.MakeHonkNoise();
+
+            //Constructor Initialization
+            Car motorcycle = new Car(1996, "Harley Davidson", "FLHR", "Potato Potato Brap Brap Potato", "beep beep", true);
+
+            motorcycle.MakeEngineNoise();
+            motorcycle.MakeHonkNoise();
 
             //*************BONUS*************//
 
@@ -28,6 +52,17 @@ namespace CarLotSimulator
             //It should have at least one property: a List of cars
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+
+                                                static void Main(string[] args)
+            {
+                string greeting = "hi";
+
+                var newGreeting = CarLotList.AddExclamation(greeting);
+
+            }
+
+
+
         }
     }
 }
