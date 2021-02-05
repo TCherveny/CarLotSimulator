@@ -2,9 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CarLotSimulator
+public static class CarLotList
 {
-    class Class1
+    static CarLotList()
     {
+        Name = "Car Nation";
     }
+
+    public static string Name { get; set; }
+
+    public static void PrintName()
+    {
+        Console.WriteLine($"The name of this carlot is {Name}");
+    }
+
+    public static string AddExclamation(string input)
+    {
+        return input += "!";
+    }
+
 }

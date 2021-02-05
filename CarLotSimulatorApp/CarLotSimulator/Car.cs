@@ -21,7 +21,7 @@ namespace CarLotSimulator
 
 
 
-        public Car(int year, string make, string model, string enginenoise, string honknoise, bool isdrivable )
+        public Car(int year, string make, string model, string enginenoise, string honknoise, bool isdrivable = false)
         {
             Year = year;
             Make = make;
@@ -38,14 +38,14 @@ namespace CarLotSimulator
         }
 
 
-        public void MakeEngineNoise()
+        public void MakeEngineNoise(string engineNoise)
         {
-            Console.WriteLine(EngineNoise);
+            Console.WriteLine(engineNoise);
         }
 
-        public void MakeHonkNoise()
+        public void MakeHonkNoise(string honkNoise)
         {
-            Console.WriteLine(HonkNoise);
+            Console.WriteLine(honkNoise);
         }
 
 
